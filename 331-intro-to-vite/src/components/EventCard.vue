@@ -20,10 +20,10 @@ defineProps<{
 <template>
   <div class="event-class">
     <div class="event-card">
-      <!-- <h2>{{ event.title }}</h2>
-      <span>@{{ event.time }} on {{ event.date }}</span> -->
-      <h2>{{ event.category }}</h2>
-      <h2>{{ event.organizer }}</h2>
+      <h2>{{ event.title }}</h2>
+      <span>@{{ event.time }} on {{ event.date }}</span>
+      <!-- <h2>{{ event.category }}</h2>
+      <h2>{{ event.organizer }}</h2> -->
     </div>
   </div>
 </template>
@@ -41,8 +41,8 @@ defineProps<{
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
-h2 {
+/* h2 {
   font-size: 20px;
   text-align: right;
-}
+} */
 </style>
