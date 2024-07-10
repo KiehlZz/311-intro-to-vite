@@ -17,7 +17,7 @@ import { RouterLink, RouterView } from 'vue-router'
   </div>
 </template>
 
-<style scoped>
+<style>
 
 #layout {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -25,6 +25,10 @@ import { RouterLink, RouterView } from 'vue-router'
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+h2 {
+  font-size: 20px;
 }
 
 nav {
