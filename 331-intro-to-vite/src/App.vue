@@ -9,9 +9,9 @@ const { message } = storeToRefs(store)
 <template>
   <div id="layout">
     <header>
-      <div id="flashMessage" v-if="message">
+      <!-- <div id="flashMessage" v-if="message">
         <h4>{{ message }}</h4>
-      </div>
+      </div> -->
       <div class="wrapper">
         <nav>
           <RouterLink to="{ name: 'event-list-view', query: { perPage: 2, page: 1 } }">Event</RouterLink> |
