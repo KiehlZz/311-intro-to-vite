@@ -12,13 +12,13 @@ const totalEvents = ref(0)
 const perPage = computed(() => parseInt(route.query.perPage as string) || 2)
 const page = computed(() => parseInt(route.query.page as string) || 1)
 const hasNextPage = computed(() => {
-  const totalPages = Math.ceil(totalEvents.value / perPage.value)
+  const totalPages = Math.ceil(totalEvents.value / 3)
   return page.value < totalPages
 })
 
 onMounted ( () => {
   watchEffect(() => {
-    EventService.getEvents(perPage.value, page.value)
+    EventService.getEvents(3, page.value)
       .then((response) => {
         events.value = response.data
         totalEvents.value = parseInt(response.headers['x-total-count'])
