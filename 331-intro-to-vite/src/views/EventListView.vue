@@ -16,14 +16,6 @@ const hasNextPage = computed(() => {
   return page.value < totalPages
 })
 
-// const props = defineProps ({
-//   page: {
-//     type: Number,
-//     required: true
-//   }
-// })
-// const page = computed(() => props.page)
-
 onMounted ( () => {
   watchEffect(() => {
     events.value = null
