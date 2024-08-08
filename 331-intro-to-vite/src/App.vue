@@ -8,7 +8,6 @@ import { RouterLink, RouterView } from 'vue-router'
       <div class="wrapper">
         <nav>
           <RouterLink to="{ name: 'event-list-view', query: { perPage: 2, page: 1 } }">Event</RouterLink> |
-          <RouterLink to="{ name: 'student'}">Student</RouterLink> |
           <RouterLink to="{ name: 'about'}">About</RouterLink>
         </nav>
       </div>
