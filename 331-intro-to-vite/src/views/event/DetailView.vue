@@ -21,3 +21,16 @@ const { event } = toRefs(props)
   <p>{{ event.description }}</p>
 </template>
 
+<style>
+@keyframes yellofade {
+  from {
+    background-color: yellow;
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+#flashMessage {
+  animation: yellofade 3s ease-in-out;
+}</style>
