@@ -9,9 +9,9 @@ const { message } = storeToRefs(store)
 <template>
   <div class="text-center font-sans texe-gray-700 antialiased">
     <header>
-      <!-- <div id="flashMessage" v-if="message">
+      <div id="flashMessage" class="animate-fade" v-if="message">
         <h4>{{ message }}</h4>
-      </div> -->
+      </div>
       <div class="wrapper">
         <nav class="py-6">
           <RouterLink class="font-bold text-gray-700" exact-active-class="text-green-500" :to="{ name: 'event-list-view', query: { perPage: 2, page: 1 } }">Event</RouterLink> |
@@ -29,7 +29,7 @@ h2 {
   font-size: 20px;
 }
 
-@keyframes yellofade {
+/* @keyframes yellofade {
   from {
     background-color: yellow;
   }
@@ -40,7 +40,7 @@ h2 {
 
 #flashMessage {
   animation: yellofade 3s ease-in-out;
-}
+} */
 
 nav {
   padding: 30px;

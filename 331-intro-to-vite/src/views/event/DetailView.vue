@@ -14,9 +14,6 @@ const { event } = toRefs(props)
 
 </script>
 <template>
-  <div id="flashMessage" v-if="message">
-    <h4>{{ message }}</h4>
-  </div>
   <p>{{ event.time }} on {{ event.date }} @ {{ event.location }}</p>
   <p>{{ event.description }}</p>
 </template>
