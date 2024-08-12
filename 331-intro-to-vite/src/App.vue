@@ -42,7 +42,7 @@ h2 {
   animation: yellofade 3s ease-in-out;
 } */
 
-nav {
+/* nav {
   padding: 30px;
 }
 
@@ -53,5 +53,5 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
-}
+} */
 </style>
