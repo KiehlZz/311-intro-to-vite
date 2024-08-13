@@ -25,9 +25,9 @@ const { message } = storeToRefs(store)
 </template>
 
 <style>
-h2 {
+/* h2 {
   font-size: 20px;
-}
+} */
 
 /* @keyframes yellofade {
   from {

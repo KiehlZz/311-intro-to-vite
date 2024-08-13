@@ -11,7 +11,9 @@ const props = withDefaults(
 </script>
 
 <template>
-  <h1>Oops!</h1>
-  <h3>The {{ resource }} you're looking for is not here.</h3>
-  <router-link :to="{ name: 'event-list-view' }">Back to the home page</router-link>
+    <div class="text-center py-20">
+      <h1 class="text-4xl font-bold mb-4">Oops!</h1>
+      <h3 class="text-lg mb-4">The {{ resource }} you're looking for is not here.</h3>
+      <router-link :to="{ name: 'event-list-view' }">Back to the home page</router-link>  
+    </div>
 </template>
